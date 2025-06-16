@@ -68,11 +68,28 @@
       feather.replace();
     </script>
 
+
     <!-- my javascript -->
 
     <script src="script.js"></script>
 
 
+
+    <script>
+  const navbarNav = document.querySelector('.navbar-nav');
+  const hamburger = document.querySelector('#hamburger-menu');
+
+  hamburger.addEventListener('click', function () {
+    navbarNav.classList.toggle('active');
+  });
+
+  // Klik di luar menu, tutup navbar
+  document.addEventListener('click', function (e) {
+    if (!hamburger.contains(e.target) && !navbarNav.contains(e.target)) {
+      navbarNav.classList.remove('active');
+    }
+  });
+</script>
 
 
 
