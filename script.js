@@ -1,20 +1,42 @@
-// toggle class active
+// toggle class active untuk amburger menu
 
 const navbarNav = document.querySelector(".navbar-nav");
 
 //ketika hamburger menu di klik
 
-dokument.querySelector("#hamburger-menu").onclick = () => {
-  navbarNav.classList.tooggle("active");
+document.querySelector("#hamburger-menu").onclick = () => {
+  navbarNav.classList.toggle("active");
 };
 
-//klik diluar sidebar unntuk menghilangkan nav
 
-const hamburger = document.querySelector("#hamburger-menu");
+// toggle class active untuk search form
+const searchForm = document.querySelector('.search-form');
 
-9;
+const searchBox = document.querySelector('#search-box');
+
+
+document.querySelector('#search-button').onclick = (e) => {
+searchForm.classList.toggle('active');
+searchBox.focus();
+e.preventDefault();
+}
+
+
+
+//klik diluar elemen
+
+const hm = document.querySelector("#hamburger-menu");
+const sb = document.querySelector('#search-button');
+
 document.addEventListener("click", function (e) {
-  if (!hamburger.contains(e.target) && !navbarNav.contains(e.target)) {
-    navbarNav.classList.remove("active");
-  }
+    if (!hm.contains(e.target) && !navbarNav.contains(e.target)) {
+      navbarNav.classList.remove("active");
+    }
+
+
+if (!sb.contains(e.target) && !searchForm.contains(e.target)) {
+      searchForm.classList.remove("active");
+    }
+
+
 });
