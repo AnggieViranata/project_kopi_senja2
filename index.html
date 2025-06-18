@@ -45,7 +45,7 @@
       <div class="navbar-extra">
         <a href="#" id="search-button"><i data-feather="search"></i></a>
 
-        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
 
         <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
       </div>
@@ -55,11 +55,48 @@
 
 <div class="search-form">
 
-    <input type="search" id="search-box" placeholder="search here...">
+<input type="search" id="search-box" placeholder="search here..."/>
     <label for="search-box"><i data-feather="search"></i></label>
 </div>
 
     <!-- search form end -->
+
+
+<!-- shopping cart start -->
+<div class="shopping-cart">
+  <div class="cart-item">
+    <img src="img/product/coffee beans.jpeg" alt="product 1" />
+
+    <div class="item-detail">
+      <h3>product 1</h3>
+      <div class="item-price">30k</div>
+    </div>
+    <i data-feather="trash-2" class="remove-item"></i>
+  </div>
+
+  <div class="cart-item">
+    <img src="img/product/coffee beans.jpeg" alt="product 2" />
+
+    <div class="item-detail">
+      <h3>product 2</h3>
+      <div class="item-price">35k</div>
+    </div>
+    <i data-feather="trash-2" class="remove-item"></i>
+  </div>
+
+  <div class="cart-item">
+    <img src="img/product/coffee beans.jpeg" alt="product 3" />
+
+    <div class="item-detail">
+      <h3>product 3</h3>
+      <div class="item-price">40k</div>
+    </div>
+    <i data-feather="trash-2" class="remove-item"></i>
+  </div>
+</div>
+<!-- shopping cart end -->
+
+
 
     </nav>
     <!-- navbar end -->
@@ -93,7 +130,7 @@
 
             <div class="about-img">
 
-                <img src="IMG/Coffee.jpg" alt="Tentang Kami">
+                <img src="img/Coffee.jpg" alt="Tentang Kami">
             </div>
 
             <div class="content">
@@ -129,50 +166,50 @@
             <div class="menu-card">
                 <img src="IMG/kopi.jpg" alt="espresso" class="menu-card-img">
 
-                <h3 class="menu-card-img">- Espresso -</h3>
+                <h3 class="menu-card-title">- Espresso -</h3>
                 <p class="menu-card-price">15k</p>
-                </p>
+
             </div>
 
             <div class="menu-card">
                 <img src="IMG/Coffee.jpg" alt="latte" class="menu-card-img">
 
-                <h3 class="menu-card-img">- latte -</h3>
+                <h3 class="menu-card-title">- latte -</h3>
                 <p class="menu-card-price">15k</p>
-                </p>
+
             </div>
 
             <div class="menu-card">
                 <img src="IMG/es kopi.jpeg" alt="Es Cappuccino" class="menu-card-img">
 
-                <h3 class="menu-card-img">- Es Cappuccino -</h3>
+                <h3 class="menu-card-title">- Es Cappuccino -</h3>
                 <p class="menu-card-price">15k</p>
-                </p>
+
             </div>
 
             <div class="menu-card">
                 <img src="IMG/es macha.jpeg" alt="es macha" class="menu-card-img">
 
-                <h3 class="menu-card-img">- es macha -</h3>
+                <h3 class="menu-card-title">- es macha -</h3>
                 <p class="menu-card-price">15k</p>
-                </p>
+
             </div>
 
             <div class="menu-card">
                 <img src="IMG/macha latte.jpeg" alt="macha latte" class="menu-card-img">
 
-                <h3 class="menu-card-img">- macha latte -</h3>
+                <h3 class="menu-card-title">- macha latte -</h3>
                 <p class="menu-card-price">15k</p>
-                </p>
+
             </div>
 
 
      <div class="menu-card">
                 <img src="IMG/americano.jpeg" alt="americano" class="menu-card-img">
 
-                <h3 class="menu-card-img">- Americano -</h3>
+                <h3 class="menu-card-title">- Americano -</h3>
                 <p class="menu-card-price">15k</p>
-                </p>
+
             </div>
         </div>
     </section>
@@ -372,7 +409,7 @@
 
 
 
-    <script>
+    <!-- <script>
   const navbarNav = document.querySelector('.navbar-nav');
   const hamburger = document.querySelector('#hamburger-menu');
 
@@ -386,7 +423,7 @@
       navbarNav.classList.remove('active');
     }
   });
-</script>
+</script> -->
 
 
 
