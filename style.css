@@ -195,10 +195,11 @@ body {
     background-size: cover;
     background-position: center;
     position: relative;
+    mask-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
 
-.hero::after{
+/* .hero::after{
 
     content:'';
     display: block;
@@ -207,7 +208,7 @@ body {
     height: 100%;
     background: linear-gradient(0deg,rgba(1, 1, 3, 1) 3%, rgba(255, 255, 255, 0) 25%);
      pointer-events: none;
-}
+} */
 
 
 .hero .content {
@@ -217,7 +218,6 @@ body {
     text-align: center;
     position: fixed;
     top: 130px;
-    /* top diganti dari 150 ke 130px */
 }
 
 
