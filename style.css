@@ -736,3 +736,29 @@ flex-wrap: wrap;
   }
 
 }
+
+
+
+
+
+
+
+/*
+📌 Perbedaan `clip-path` vs `mask` (CSS)
+
+- clip-path: Potong elemen pakai bentuk (circle, polygon). Tidak ada transparansi. Hard cut.
+- mask: Atur transparansi berdasarkan warna/gradasi (putih terlihat, hitam hilang). Bisa soft/fade.
+
+🧪 Contoh:
+.clip {
+  clip-path: circle(50% at center);
+}
+
+.mask {
+  mask-image: linear-gradient(to bottom, black, transparent);
+}
+
+Gunakan:
+- clip-path ➜ untuk bentuk tegas
+- mask ➜ untuk efek transparansi halus
+*/
