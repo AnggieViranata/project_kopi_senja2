@@ -212,6 +212,20 @@ body {
 } */
 
 
+.hero .mask-container {
+position: absolute;
+/* background: salmon; */
+inset: 0;
+-webkit-mask-image: url(img/baground\ svg.svg);
+
+-webkit-mask-repeat: no-repeat;
+
+-webkit-mask-size: cover;
+
+-webkit-mask-position: center;
+}
+
+
 .hero .content {
     padding: 1.4rem 7%;
     /* max-width: 60rem; */
