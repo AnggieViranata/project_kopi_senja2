@@ -212,7 +212,12 @@ body {
 
 .hero .content {
     padding: 1.4rem 7%;
-    max-width: 60rem;
+    /* max-width: 60rem; */
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 130px;
+    /* top diganti dari 150 ke 130px */
 }
 
 
