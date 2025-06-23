@@ -306,8 +306,14 @@ flex: 1 1 45rem;
 }
 
 .about .row .about-img img {
-    width: 80%;
+ width: 80%;
+ -webkit-mask-image: url(img/splas.svg);
 
+-webkit-mask-size: 95%;
+
+-webkit-mask-repeat: no-repeat;
+
+-webkit-mask-position: center;
 }
 
 
