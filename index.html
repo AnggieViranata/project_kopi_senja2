@@ -93,6 +93,9 @@
         </template>
 
         <h4 x-show="!$store.cart.items.length">Cart is Empty</h4>
+        <h4 x-show="$store.cart.items.length">
+          Total : <span x-text="rupiah($store.cart.total)"></span>
+        </h4>
       </div>
       <!-- shopping cart end -->
     </nav>
