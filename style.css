@@ -12,6 +12,9 @@
   text-decoration: none;
 }
 
+.item-detail-button{
+    color: white;
+}
 
 html {
     scroll-behavior: smooth;
@@ -416,13 +419,13 @@ justify-content: center;
 }
 
 
-.products .product-icons {
+.products .product-icon {
     display: flex;
     justify-content: center;
     gap: 0.5rem;
 }
 
-.products .product-icons a {
+.products .product-icon a {
     width: 4rem;
     height: 4rem;
     color: #fff;
@@ -439,6 +442,18 @@ justify-content: center;
     background-color: var(--primary);
     border: 1px solid var(--primary);
 }
+
+
+.products .product-icon svg {
+  width: 24px;
+  height: 24px;
+  stroke: white;
+  fill: none;
+}
+
+
+
+
 
 .products .product-image{
 padding: 1rem 0;
@@ -473,11 +488,11 @@ height: 25rem;
 }
 
 
-.products .product-price span {
-    text-decoration: line-through;
-    font-weight: lighter;
-    font-size: 1rem;
-}
+/* .products .product-price span { */
+    /* text-decoration: line-through; */
+    /* font-weight: lighter; */
+    /* font-size: 1rem; */
+/* } */
 
 
 /* kontak section*/
