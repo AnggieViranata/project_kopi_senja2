@@ -49,11 +49,11 @@
       <div class="navbar-extra">
         <a href="#" id="search-button"><i data-feather="search"></i></a>
 
-        <a href="#" id="shopping-cart-button"
-          ><i data-feather="shopping-cart"></i>
+        <a href="#" id="shopping-cart-button">
+          <i data-feather="shopping-cart"></i>
           <span
             class="quantity-badge"
-            x-show="$store.cart.quantity"
+            xshow="$store.cart.quantity"
             x-text="$store.cart.quantity"
           ></span>
         </a>
@@ -72,35 +72,22 @@
 
       <!-- shopping cart start -->
       <div class="shopping-cart">
-        <div class="cart-item">
-          <img src="img/product/coffee beans.jpeg" alt="product 1" />
+        <template x-for="(item, index) in $store.cart.items" x-keys="index">
+          <div class="cart-item">
+            <img :src="`img/product/${item.img}`" :alt="item.name" />
 
-          <div class="item-detail">
-            <h3>product 1</h3>
-            <div class="item-price">30k</div>
+            <div class="item-detail">
+              <h3 x-text="item.name"></h3>
+              <div class="item-price">
+                <span x-text="rupiah(item.price)"></span> &times;
+                <button id="remove">&minus;</button>
+                <span x-text="item.quantity"></span>
+                <button id="add">&plus;</button>&equals;
+                <span x-text="item.total"></span>
+              </div>
+            </div>
           </div>
-          <i data-feather="trash-2" class="remove-item"></i>
-        </div>
-
-        <div class="cart-item">
-          <img src="img/product/coffee beans.jpeg" alt="product 2" />
-
-          <div class="item-detail">
-            <h3>product 2</h3>
-            <div class="item-price">35k</div>
-          </div>
-          <i data-feather="trash-2" class="remove-item"></i>
-        </div>
-
-        <div class="cart-item">
-          <img src="img/product/coffee beans.jpeg" alt="product 3" />
-
-          <div class="item-detail">
-            <h3>product 3</h3>
-            <div class="item-price">40k</div>
-          </div>
-          <i data-feather="trash-2" class="remove-item"></i>
-        </div>
+        </template>
       </div>
       <!-- shopping cart end -->
     </nav>
