@@ -14,7 +14,25 @@
                 {id: 5, name: 'coffee_beans_5', img: 'coffee_beans_5.jpeg', price: 40000},
             ],
         }))
-    })
+
+
+
+
+Alpine.store('cart', {
+   items: [],
+   total: 0,
+   quantity: 0,
+ add(newItem) {
+
+    this.items.push(newItem);
+    this.quantity++;
+    this.total += newItem.price;
+    console.log(this.items);
+    },
+});
+
+
+    });
 
 
 
