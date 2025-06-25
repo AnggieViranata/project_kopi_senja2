@@ -219,6 +219,11 @@ body {
  border-radius: 50%;
 }
 
+.shopping-cart h4 {
+font-size: 1.6rem;
+margin-top: -1rem;
+text-align: center;
+}
 
 /* hero section */
 
